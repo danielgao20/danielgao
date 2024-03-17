@@ -410,6 +410,8 @@ article .icon {
   justify-content: center;
   gap: 0.5rem;
   margin: 1rem;
+  min-width: 120px;
+  flex-wrap: wrap;
 }
 
 .contact-info-container p {
