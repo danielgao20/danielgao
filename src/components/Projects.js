@@ -58,11 +58,11 @@ function Projects() {
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
+              {/* <img
                 src="./assets/amanda.png"
                 alt="AI Medical Assistant"
                 class="project-img"
-              />
+              /> */}
             </div>
             <h2 class="experience-sub-title project-title">AI Medical Assistant</h2>
             <div class="btn-container">
@@ -82,11 +82,11 @@ function Projects() {
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
+              {/* <img
                 src="./assets/roadie.png"
                 alt="Project 3"
                 class="project-img"
-              />
+              /> */}
             </div>
             <h2 class="experience-sub-title project-title">Roadie</h2>
             <div class="btn-container">
