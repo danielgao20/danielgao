@@ -1,14 +1,40 @@
 /* GENERAL */
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap'); /* Poppins font */
 
 * {
   margin: 0;
   padding: 0;
 }
 
+/* Global styles */
 body {
-  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-family: 'Poppins', sans-serif; /* Set Poppins as the default font */
+  background-color: black; /* Set black background for the entire page */
+  color: white; /* Set white color for text */
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.coming-soon .title {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.coming-soon .subheading {
+  font-size: 20px;
+  font-weight: 400;
+  color: gray;
+  margin: 0;
 }
 
 html {
@@ -435,18 +461,4 @@ footer {
 
 footer p {
   text-align: center;
-}
-
-.coming-soon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, clean font */
-  background-color: #f0f0f0; /* Light grey background */
-}
-
-.coming-soon h1 {
-  font-size: 24px;
-  color: #333; /* Dark grey text for good readability */
 }
