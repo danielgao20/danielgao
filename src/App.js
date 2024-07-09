@@ -6,8 +6,8 @@ function App() {
   return (
     <div className="App">
       <div className="coming-soon">
-        <h1 className="title">making updates</h1>
-        <h2 className="subheading">new site coming soon :)</h2>
+        <h1 className="title">Making updates</h1>
+        <h2 className="subheading">new site coming soon!</h2>
       </div>
     </div>
   );
