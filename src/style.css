@@ -37,6 +37,24 @@ body {
   margin: 0;
 }
 
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Adjust gap for spacing between icons */
+}
+
+.social-icon {
+  width: 50px; /* Match size to fit with the overall design */
+  height: 50px;
+  filter: invert(100%); /* Invert colors for white icons on black background */
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+}
+
 html {
   scroll-behavior: smooth;
 }

@@ -1,24 +1,6 @@
 import React from 'react';
 import './style.css'; // Import global styles
 import './mediaqueries.css';  // Responsive styles
-
-function App() {
-  return (
-    <div className="App">
-      <div className="coming-soon">
-        <h1 className="title">Making updates</h1>
-        <h2 className="subheading">new site coming soon!</h2>
-      </div>
-    </div>
-  );
-}
-
-export default App;
-
-
-// import React from 'react';
-// import './style.css'; // Import global styles
-// import './mediaqueries.css';  // Responsive styles
 // import Header from './components/Header';
 // import Profile from './components/Profile';
 // import About from './components/About';
@@ -26,19 +8,21 @@ export default App;
 // import Projects from './components/Projects';
 // import Contact from './components/Contact';
 // import Footer from './components/Footer';
+import MaintenancePage from './components/MaintenancePage';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <Header />
-//       <Profile />
-//       <About />
-//       <Experience />
-//       <Projects />
-//       <Contact />
-//       <Footer />
-//     </div>
-//   );
-// }
+function App() {
+  return (
+    <div className="App">
+      {/* <Header />
+      <Profile />
+      <About />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer /> */}
+      <MaintenancePage />
+    </div>
+  );
+}
 
-// export default App;
+export default App;
