@@ -480,3 +480,7 @@ footer {
 footer p {
   text-align: center;
 }
+
+#loom-companion-mv3 {
+  display: none;
+}
