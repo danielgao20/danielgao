@@ -1,5 +1,7 @@
 import React from 'react';
 import '../style.css'; // Import the existing styles
+import githubIcon from '../assets/github.png';
+import linkedinIcon from '../assets/linkedin.png';
 
 const MaintenancePage = () => {
   return (
@@ -10,10 +12,10 @@ const MaintenancePage = () => {
 
          <div className="social-links">
           <a href="https://github.com/danielgao20" target="_blank" rel="noopener noreferrer">
-            <img src={require('../assets/github.png')} alt="GitHub" className="social-icon" />
+            <img src={githubIcon} alt="GitHub" className="social-icon" />
           </a>
           <a href="https://www.linkedin.com/in/danielgao20/" target="_blank" rel="noopener noreferrer">
-            <img src={require('../assets/linkedin.png')} alt="LinkedIn" className="social-icon" />
+            <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
           </a>
         </div>
        </div>
