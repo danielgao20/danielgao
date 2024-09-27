@@ -1,7 +1,8 @@
 import React from 'react';
-import '../style.css'; // Import the existing styles
+import '../style.css';
 import githubIcon from '../assets/github.png';
 import linkedinIcon from '../assets/linkedin.png';
+import devpostIcon from '../assets/devpost.svg';
 
 const MaintenancePage = () => {
   return (
@@ -16,6 +17,9 @@ const MaintenancePage = () => {
           </a>
           <a href="https://www.linkedin.com/in/danielgao20/" target="_blank" rel="noopener noreferrer">
             <img src={linkedinIcon} alt="LinkedIn" className="social-icon" />
+          </a>
+          <a href="https://devpost.com/danielgao20" target="_blank" rel="noopener noreferrer">
+            <img src={devpostIcon} alt="Devpost" className="social-icon" />
           </a>
         </div>
        </div>
