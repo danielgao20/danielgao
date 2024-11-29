@@ -9,7 +9,7 @@ const MaintenancePage = () => {
     <div className="App">
        <div className="coming-soon">
          <h1 className="title">Daniel Gao</h1>
-         <h2 className="subheading">making updates, new site coming soon!</h2>
+         <h2 className="subheading">Making updates, new site coming soon!</h2>
 
          <div className="social-links">
           <a href="https://github.com/danielgao20" target="_blank" rel="noopener noreferrer">
