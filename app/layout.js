@@ -2,7 +2,7 @@ import "./globals.css";
 
 export const metadata = {
   title: "Daniel Gao",
-  description: "Under construction",
+  description: "Personal website",
 };
 
 export default function RootLayout({ children }) {
