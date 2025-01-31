@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaDev, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDev, FaEnvelope, FaSpotify } from "react-icons/fa";
 import Image from "next/image";
 import DarkModeToggle from "./components/DarkModeToggle";
 
@@ -53,6 +53,14 @@ export default function Home() {
           className="hover:text-gray-400"
         >
           <FaEnvelope size={30} />
+        </a>
+        <a
+          href="https://open.spotify.com/user/dannygao20?si=e157cac31cb04dc9"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-400"
+        >
+          <FaSpotify size={30} />
         </a>
       </div>
 
