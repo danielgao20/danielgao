@@ -15,10 +15,10 @@ export default function Home() {
 
       <h1 className="text-3xl font-bold mt-8">Hey, what&apos;s up!</h1>
       <p className="mt-5 text-base text-center max-w-xl">
-        My name is Daniel, I&apos;m a junior at USC studying computer science and
-        business administration, currently exploring software engineering and
+        My name is Daniel, I&apos;m a junior at <b>USC</b> studying computer science and
+        business, currently exploring software engineering and
         entrepreneurial projects. I&apos;ve previously worked on full-stack projects
-        at Amazon and IBM.
+        at <b>Amazon</b> and <b>IBM</b>.
       </p>
 
       <div className="flex mt-8 space-x-6">
