@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaDev, FaEnvelope, FaSpotify } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaDev, FaEnvelope, FaSpotify, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import DarkModeToggle from "./components/DarkModeToggle";
 
@@ -15,7 +15,7 @@ export default function Home() {
 
       <h1 className="text-3xl font-bold mt-8">Hey, what&apos;s up!</h1>
       <p className="mt-5 text-base text-center max-w-xl">
-        My name is Daniel, I&apos;m a junior at <b>USC</b> studying computer science and
+        My name is Daniel Gao, I&apos;m a junior at <b>USC</b> studying computer science and
         business, currently exploring software engineering and
         entrepreneurial projects. I&apos;ve previously worked on full-stack projects
         at <b>Amazon</b> and <b>IBM</b>.
@@ -45,6 +45,14 @@ export default function Home() {
           className="hover:text-gray-400"
         >
           <FaDev size={30} />
+        </a>
+        <a
+          href="https://x.com/danielgao20_"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-gray-400"
+        >
+          <FaXTwitter size={30} />
         </a>
         <a
           href="mailto:dygao@usc.edu"
