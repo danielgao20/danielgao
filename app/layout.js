@@ -8,18 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <style>
-          {`
-            :root {
-              --font-sans: 'Helvetica', Arial, sans-serif;
-            }
-          `}
-        </style>
-      </head>
-      <body className="antialiased" style={{ fontFamily: "var(--font-sans)" }}>
-        {children}
-      </body>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }

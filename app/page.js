@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaDev, FaEnvelope, FaSpotify, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaDev, FaSpotify, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import DarkModeToggle from "./components/DarkModeToggle";
 
@@ -13,12 +13,12 @@ export default function Home() {
         className="rounded-lg shadow-lg"
       />
 
-      <h1 className="text-3xl font-bold mt-8">Hey, what&apos;s up!</h1>
-      <p className="mt-5 text-base text-center max-w-xl">
-        My name is Daniel Gao, I&apos;m a junior at <b>USC</b> studying computer science and
-        business, currently exploring software engineering and
+      <h1 className="text-3xl font-medium mt-8">Hey, what&apos;s up!</h1>
+      <p className="mt-5 text-base font-normal text-center max-w-xl">
+        My name is Daniel Gao, I&apos;m a junior at <b className="bold-emphasized">USC</b> studying 
+        computer science and business, currently exploring software engineering and
         entrepreneurial projects. I&apos;ve previously worked on full-stack projects
-        at <b>Amazon</b> and <b>IBM</b>.
+        at <b className="bold-emphasized">Amazon</b> and <b className="bold-emphasized">IBM</b>.
       </p>
 
       <div className="flex mt-8 space-x-6">
@@ -47,20 +47,12 @@ export default function Home() {
           <FaDev size={30} />
         </a>
         <a
-          href="https://x.com/danielgao20_"
+          href="https://x.com/danielgaoo"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400"
         >
           <FaXTwitter size={30} />
-        </a>
-        <a
-          href="mailto:dygao@usc.edu"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hover:text-gray-400"
-        >
-          <FaEnvelope size={30} />
         </a>
         <a
           href="https://open.spotify.com/user/dannygao20?si=e157cac31cb04dc9"
@@ -71,6 +63,11 @@ export default function Home() {
           <FaSpotify size={30} />
         </a>
       </div>
+
+      {/* Footer with Email */}
+      <p className="mt-20 text-sm text-gray-600 dark:text-gray-400">
+        © 2025 Daniel Gao • <a href="mailto:dygao@usc.edu" className="hover:underline">dygao@usc.edu</a>
+      </p>
 
       <DarkModeToggle />
     </div>
