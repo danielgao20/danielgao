@@ -5,13 +5,15 @@ import DarkModeToggle from "./components/DarkModeToggle";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6 bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
-      <Image
-        src="/baymax.jpg"
-        alt="Baymax from Big Hero 6"
-        width={200}
-        height={200}
-        className="rounded-lg shadow-lg"
-      />
+      <a href="https://github.com/danielgao20/AMANDA" target="_blank" rel="noopener noreferrer">
+        <Image
+          src="/baymax.jpg"
+          alt="Baymax from Big Hero 6"
+          width={200}
+          height={200}
+          className="rounded-lg shadow-lg hover:opacity-80 transition-opacity duration-200"
+        />
+      </a>
 
       <h1 className="text-3xl font-medium mt-8">Hey, what's up!</h1>
       <p className="mt-5 text-base font-normal text-center max-w-xl">
