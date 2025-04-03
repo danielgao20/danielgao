@@ -1,10 +1,32 @@
 import { FaGithub, FaLinkedin, FaDev, FaSpotify, FaXTwitter } from "react-icons/fa6";
 import Image from "next/image";
 import DarkModeToggle from "./components/DarkModeToggle";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
+  const projects = [
+    {
+      title: "Sage",
+      description: "An intelligent legal workbench that helps lawyers streamline workflows, organize documents, and surface insights faster — Notion for lawyers.",
+      imageUrl: "/sage.jpg",
+      projectUrl: "https://andrewmkim.me/sage"
+    },
+    {
+      title: "Glance",
+      description: "An automated documentation platform that keeps teams effortlessly aligned by eliminating inefficiencies in communication and knowledge-sharing.",
+      imageUrl: "/glance.jpg",
+      projectUrl: "https://tryglance.framer.website/"
+    },
+    {
+      title: "AMANDA",
+      description: "Inspired by Baymax, a virtual medical assistant that detects urgent skin conditions and provides treatment plans, built to improve access to basic healthcare.",
+      imageUrl: "/amanda.jpg",
+      projectUrl: "https://devpost.com/software/amanda-o1eg2a"
+    }
+  ];
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-6 bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
+    <div className="flex flex-col items-center justify-center min-h-screen px-6 py-32 bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
       <a href="https://github.com/danielgao20/AMANDA" target="_blank" rel="noopener noreferrer">
         <Image
           src="/baymax.jpg"
@@ -64,6 +86,25 @@ export default function Home() {
         >
           <FaSpotify size={30} />
         </a>
+      </div>
+
+      {/* Projects Section */}
+      <div className="mt-16 w-full max-w-4xl">
+        <div className="flex justify-center">
+          <div className="w-full max-w-xs border-t border-gray-300 dark:border-gray-600 mb-12"></div>
+        </div>
+        <h2 className="text-2xl font-medium mb-8 text-center text-gray-800 dark:text-gray-200">Projects</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <ProjectCard
+              key={index}
+              title={project.title}
+              description={project.description}
+              imageUrl={project.imageUrl}
+              projectUrl={project.projectUrl}
+            />
+          ))}
+        </div>
       </div>
 
       {/* footer with email */}
