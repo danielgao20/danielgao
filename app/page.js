@@ -9,7 +9,7 @@ export default function Home() {
       title: "Sage",
       description: "An intelligent legal workbench that helps lawyers streamline workflows, organize documents, and surface insights faster — Notion for lawyers.",
       imageUrl: "/sage.jpg",
-      projectUrl: "https://andrewmkim.me/sage"
+      projectUrl: "https://hellosage.app/"
     },
     {
       title: "Glance",
