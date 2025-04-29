@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaDev, FaSpotify, FaXTwitter } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaDev, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 import Image from "next/image";
 import DarkModeToggle from "./components/DarkModeToggle";
 import ProjectCard from "./components/ProjectCard";
@@ -85,12 +85,12 @@ export default function Home() {
           <FaXTwitter size={30} />
         </a>
         <a
-          href="https://open.spotify.com/user/dannygao20?si=e157cac31cb04dc9"
+          href="mailto:dygao@usc.edu"
           target="_blank"
           rel="noopener noreferrer"
           className="hover:text-gray-400"
         >
-          <FaSpotify size={30} />
+          <FaEnvelope size={30} />
         </a>
       </div>
 
