@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 
 export default function ProjectCard({ title, description, imageUrl, projectUrl }) {
   return (
@@ -9,7 +8,7 @@ export default function ProjectCard({ title, description, imageUrl, projectUrl }
       rel="noopener noreferrer"
       className="block h-full"
     >
-      <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-gray-200 dark:hover:bg-gray-700 h-full flex flex-col">
+      <div className="group relative overflow-hidden rounded-xl bg-white dark:bg-gray-800 shadow-lg transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 hover:bg-gray-200 dark:hover:bg-gray-700 h-full flex flex-col ring-0 ring-transparent hover:ring-2 hover:ring-gray-900 hover:ring-offset-2 hover:ring-offset-gray-100 dark:hover:ring-white dark:hover:ring-offset-gray-900">
         <div className="relative w-full h-40 flex-shrink-0">
           <Image
             src={imageUrl}

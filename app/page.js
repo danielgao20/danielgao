@@ -17,6 +17,12 @@ export default function Home() {
       imageUrl: "/glance.jpg",
       projectUrl: "https://tryglance.framer.website/"
     },
+    // {
+    //   title: "Intervene",
+    //   description: "Intervene is an on-device autonomous desktop agent that takes over repetitive digital workflows - filling forms, renaming files, drafting emails, and more.",
+    //   imageUrl: "/intervene.jpg",
+    //   projectUrl: "https://intervene-smoky.vercel.app/"
+    // },
     {
       title: "AMANDA",
       description: "Inspired by Baymax, a virtual medical assistant that detects urgent skin conditions and provides treatment plans, built to improve access to basic healthcare.",
@@ -93,7 +99,7 @@ export default function Home() {
         <div className="flex justify-center">
           <div className="w-full max-w-xs border-t border-gray-300 dark:border-gray-600 mb-12"></div>
         </div>
-        <h2 className="text-2xl font-medium mb-8 text-center text-gray-800 dark:text-gray-200">Projects</h2>
+        <h2 className="text-2xl font-medium mb-8 text-center text-gray-800 dark:text-gray-200">Project Spotlight</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <ProjectCard
