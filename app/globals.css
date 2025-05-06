@@ -58,3 +58,13 @@ html.dark p, html.dark a {
 h1, h2, h3, p {
   margin: 0;
 }
+
+/* Hide scrollbar utility */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Webkit */
+}
+

@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin, FaDev, FaXTwitter, FaEnvelope } from "react-icons/fa6";
 import Image from "next/image";
 import DarkModeToggle from "./components/DarkModeToggle";
-import ProjectCard from "./components/ProjectCard";
+import ProjectCarousel from "./components/ProjectCarousel";
 
 export default function Home() {
   const projects = [
@@ -17,17 +17,29 @@ export default function Home() {
       imageUrl: "/glance.jpg",
       projectUrl: "https://glance.team/"
     },
-    // {
-    //   title: "Intervene",
-    //   description: "Intervene is an on-device autonomous desktop agent that takes over repetitive digital workflows - filling forms, renaming files, drafting emails, and more.",
-    //   imageUrl: "/intervene.jpg",
-    //   projectUrl: "https://intervene-smoky.vercel.app/"
-    // },
     {
       title: "AMANDA",
       description: "Inspired by Baymax, a virtual medical assistant that detects urgent skin conditions and provides treatment plans, built to improve access to basic healthcare.",
       imageUrl: "/amanda.jpg",
       projectUrl: "https://devpost.com/software/amanda-o1eg2a"
+    },
+    {
+      title: "Claude Cortex",
+      description: "USC x Anthropic Claude Hackathon. A secure, multi-agent reasoning engine powered by Anthropic’s Claude API that helps users think more deeply, from more angles — in seconds.",
+      imageUrl: "/claude-cortex.jpg",
+      projectUrl: "https://devpost.com/software/claude-cortex"
+    },
+    {
+      title: "Intervene",
+      description: "USC x 8VC Llama Stack Challenge 1st Place Winner. Intervene is an on-device autonomous desktop agent that takes over repetitive digital workflows.",
+      imageUrl: "/intervene.jpg",
+      projectUrl: "https://www.producthunt.com/products/intervene"
+    },
+    {
+      title: "Keepsake",
+      description: "An estate planning platform that helps attorneys turn complex legal documents into interactive family portals, making it easier for clients to understand, manage, and pass down their legacies.",
+      imageUrl: "/keepsake.jpg",
+      projectUrl: "https://hellokeepsake.com/"
     }
   ];
 
@@ -95,22 +107,12 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <div className="mt-16 w-full max-w-4xl">
+      <div className="mt-16 w-full max-w-6xl mx-auto px-0 sm:px-4">
         <div className="flex justify-center">
           <div className="w-full max-w-xs border-t border-gray-300 dark:border-gray-600 mb-12"></div>
         </div>
         <h2 className="text-2xl font-medium mb-8 text-center text-gray-800 dark:text-gray-200">Project Spotlight</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <ProjectCard
-              key={index}
-              title={project.title}
-              description={project.description}
-              imageUrl={project.imageUrl}
-              projectUrl={project.projectUrl}
-            />
-          ))}
-        </div>
+        <ProjectCarousel projects={projects} />
       </div>
 
       {/* footer with email */}
