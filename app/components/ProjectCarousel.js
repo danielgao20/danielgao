@@ -4,7 +4,46 @@ import { useRef, useState, useEffect } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa6";
 import ProjectCard from "./ProjectCard";
 
-export default function ProjectCarousel({ projects }) {
+const projects = [
+  {
+    title: "Sage",
+    description: "An intelligent legal workbench that helps lawyers streamline workflows, organize documents, and surface insights faster — Notion for lawyers.",
+    imageUrl: "/sage.jpg",
+    projectUrl: "https://hellosage.app/"
+  },
+  {
+    title: "Glance",
+    description: "An automated documentation platform that keeps teams effortlessly aligned by eliminating inefficiencies in communication and knowledge-sharing.",
+    imageUrl: "/glance.jpg",
+    projectUrl: "https://glance-landing.vercel.app/"
+  },
+  {
+    title: "AMANDA",
+    description: "Inspired by Baymax, a virtual medical assistant that detects urgent skin conditions and provides treatment plans, built to improve access to basic healthcare.",
+    imageUrl: "/amanda.jpg",
+    projectUrl: "https://devpost.com/software/amanda-o1eg2a"
+  },
+  {
+    title: "Claude Cortex",
+    description: "USC x Anthropic Claude Hackathon. A secure, multi-agent reasoning engine powered by Anthropic’s Claude API that helps users think more deeply, from more angles — in seconds.",
+    imageUrl: "/claude-cortex.jpg",
+    projectUrl: "https://devpost.com/software/claude-cortex"
+  },
+  {
+    title: "Intervene",
+    description: "USC x 8VC Llama Stack Challenge 1st Place Winner. Intervene is an on-device autonomous desktop agent that takes over repetitive digital workflows.",
+    imageUrl: "/intervene.jpg",
+    projectUrl: "https://www.producthunt.com/products/intervene"
+  },
+  {
+    title: "Keepsake",
+    description: "An estate planning platform that helps attorneys turn complex legal documents into interactive family portals, making it easier for clients to understand, manage, and pass down their legacies.",
+    imageUrl: "/keepsake.jpg",
+    projectUrl: "https://hellokeepsake.com/"
+  }
+];
+
+export default function ProjectCarousel() {
   const scrollRef = useRef(null);
   const [showArrows, setShowArrows] = useState(false);
   const [canScrollLeft, setCanScrollLeft] = useState(false);
@@ -31,8 +70,6 @@ export default function ProjectCarousel({ projects }) {
     // At end
     setCanScrollRight(Math.abs(scrollLeft + offsetWidth - scrollWidth) > AT_END_THRESHOLD);
   };
-
-
 
   useEffect(() => {
     checkScroll();
@@ -104,5 +141,3 @@ export default function ProjectCarousel({ projects }) {
     </div>
   );
 }
-
-

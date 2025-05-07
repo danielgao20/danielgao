@@ -4,45 +4,6 @@ import DarkModeToggle from "./components/DarkModeToggle";
 import ProjectCarousel from "./components/ProjectCarousel";
 
 export default function Home() {
-  const projects = [
-    {
-      title: "Sage",
-      description: "An intelligent legal workbench that helps lawyers streamline workflows, organize documents, and surface insights faster — Notion for lawyers.",
-      imageUrl: "/sage.jpg",
-      projectUrl: "https://hellosage.app/"
-    },
-    {
-      title: "Glance",
-      description: "An automated documentation platform that keeps teams effortlessly aligned by eliminating inefficiencies in communication and knowledge-sharing.",
-      imageUrl: "/glance.jpg",
-      projectUrl: "https://glance-landing.vercel.app/"
-    },
-    {
-      title: "AMANDA",
-      description: "Inspired by Baymax, a virtual medical assistant that detects urgent skin conditions and provides treatment plans, built to improve access to basic healthcare.",
-      imageUrl: "/amanda.jpg",
-      projectUrl: "https://devpost.com/software/amanda-o1eg2a"
-    },
-    {
-      title: "Claude Cortex",
-      description: "USC x Anthropic Claude Hackathon. A secure, multi-agent reasoning engine powered by Anthropic’s Claude API that helps users think more deeply, from more angles — in seconds.",
-      imageUrl: "/claude-cortex.jpg",
-      projectUrl: "https://devpost.com/software/claude-cortex"
-    },
-    {
-      title: "Intervene",
-      description: "USC x 8VC Llama Stack Challenge 1st Place Winner. Intervene is an on-device autonomous desktop agent that takes over repetitive digital workflows.",
-      imageUrl: "/intervene.jpg",
-      projectUrl: "https://www.producthunt.com/products/intervene"
-    },
-    {
-      title: "Keepsake",
-      description: "An estate planning platform that helps attorneys turn complex legal documents into interactive family portals, making it easier for clients to understand, manage, and pass down their legacies.",
-      imageUrl: "/keepsake.jpg",
-      projectUrl: "https://hellokeepsake.com/"
-    }
-  ];
-
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6 py-32 bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
       <a href="https://github.com/danielgao20/AMANDA" target="_blank" rel="noopener noreferrer">
@@ -112,7 +73,7 @@ export default function Home() {
           <div className="w-full max-w-xs border-t border-gray-300 dark:border-gray-600 mb-12"></div>
         </div>
         <h2 className="text-2xl font-medium mb-8 text-center text-gray-800 dark:text-gray-200">Project Spotlight</h2>
-        <ProjectCarousel projects={projects} />
+        <ProjectCarousel />
       </div>
 
       {/* footer with email */}
