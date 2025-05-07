@@ -15,7 +15,7 @@ export default function Home() {
       title: "Glance",
       description: "An automated documentation platform that keeps teams effortlessly aligned by eliminating inefficiencies in communication and knowledge-sharing.",
       imageUrl: "/glance.jpg",
-      projectUrl: "https://glance.team/"
+      projectUrl: "https://glance-landing.vercel.app/"
     },
     {
       title: "AMANDA",
