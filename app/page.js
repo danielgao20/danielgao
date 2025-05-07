@@ -7,7 +7,7 @@ import WorkExperience from "./components/WorkExperience";
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-6 py-32 bg-gray-100 text-gray-800 dark:bg-gray-900 dark:text-gray-200 transition-colors duration-300">
-      <a href="https://github.com/danielgao20/AMANDA" target="_blank" rel="noopener noreferrer">
+      <a href="https://devpost.com/software/amanda-o1eg2a" target="_blank" rel="noopener noreferrer">
         <Image
           src="/baymax.jpg"
           alt="Baymax from Big Hero 6"
