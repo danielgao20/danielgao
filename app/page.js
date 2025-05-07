@@ -2,6 +2,7 @@ import { FaGithub, FaLinkedin, FaDev, FaXTwitter, FaEnvelope } from "react-icons
 import Image from "next/image";
 import DarkModeToggle from "./components/DarkModeToggle";
 import ProjectCarousel from "./components/ProjectCarousel";
+import WorkExperience from "./components/WorkExperience";
 
 export default function Home() {
   return (
@@ -65,6 +66,11 @@ export default function Home() {
         >
           <FaEnvelope size={30} />
         </a>
+      </div>
+
+      {/* Work and Involvements Section */}
+      <div className="mt-16 w-full max-w-2xl mx-auto px-0 sm:px-4">
+        <WorkExperience />
       </div>
 
       {/* Projects Section */}
