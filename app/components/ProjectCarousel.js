@@ -25,7 +25,7 @@ const projects = [
   },
   {
     title: "Claude Cortex",
-    description: "USC x Anthropic Claude Hackathon. A secure, multi-agent reasoning engine powered by Anthropic’s Claude API that helps users think more deeply, from more angles — in seconds.",
+    description: "USC x Anthropic Claude Hackathon 1st Place Winner. A secure, multi-agent reasoning engine powered by Claude that helps users think more deeply, from more angles.",
     imageUrl: "/claude-cortex.jpg",
     projectUrl: "https://devpost.com/software/claude-cortex"
   },
@@ -37,7 +37,7 @@ const projects = [
   },
   {
     title: "Keepsake",
-    description: "An estate planning platform that helps attorneys turn complex legal documents into interactive family portals, making it easier for clients to understand, manage, and pass down their legacies.",
+    description: "An estate planning platform that helps attorneys turn complex legal documents into interactive family portals, making it easier for clients to manage and pass down their legacies.",
     imageUrl: "/keepsake.jpg",
     projectUrl: "https://hellokeepsake.com/"
   }
