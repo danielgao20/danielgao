@@ -5,6 +5,12 @@ import Image from "next/image";
 // USC, Glance, Amazon, IBM, Sage, Keepsake, AI Camp
 const workExperiences = [
   {
+    company: "Amazon",
+    role: "Engineering",
+    year: "2023-Present",
+    logo: "/logos/amazon.jpg"
+  },
+  {
     company: "Experiential Learning Center",
     role: "Engineering",
     year: "2024-Present",
@@ -17,16 +23,16 @@ const workExperiences = [
     logo: "/logos/glance.jpg"
   },
   {
-    company: "Amazon",
-    role: "Engineering",
-    year: "2024",
-    logo: "/logos/amazon.jpg"
-  },
-  {
     company: "IBM",
     role: "Engineering",
     year: "2024",
     logo: "/logos/ibm.jpg"
+  },
+  {
+    company: "Buildspace",
+    role: "Engineering",
+    year: "2024",
+    logo: "/logos/buildspace.jpg"
   },
   {
     company: "Sage",
@@ -50,6 +56,12 @@ const workExperiences = [
 
 // Fellowships, HackSC, TroyLabs, SEP, LavaLab, Blockchain@USC, Hack the Fog, JR
 const involvements = [
+  {
+    org: "Y Combinator",
+    position: "AI Startup School",
+    year: "2025",
+    logo: "/logos/yc.jpg"
+  },
   {
     org: "Kleiner Perkins",
     position: "Finalist",
