@@ -18,10 +18,10 @@ const projects = [
     projectUrl: "https://glance-landing.vercel.app/"
   },
   {
-    title: "AMANDA",
-    description: "Inspired by Baymax, a virtual medical assistant that detects urgent skin conditions and provides treatment plans, built to improve access to basic healthcare.",
-    imageUrl: "/amanda.jpg",
-    projectUrl: "https://devpost.com/software/amanda-o1eg2a"
+    title: "Octavo",
+    description: "UC Berkeley AI Hackathon Track Winner. A human-centered search engine powered by memory agents. Search through real human experiences, not web pages.",
+    imageUrl: "/octavo.jpg",
+    projectUrl: "https://devpost.com/software/octopus-pzv5l0"
   },
   {
     title: "Claude Cortex",
@@ -40,7 +40,13 @@ const projects = [
     description: "An estate planning platform that helps attorneys turn complex legal documents into interactive family portals, making it easier for clients to manage and pass down their legacies.",
     imageUrl: "/keepsake.jpg",
     projectUrl: "https://hellokeepsake.com/"
-  }
+  },
+  {
+    title: "AMANDA",
+    description: "Inspired by Baymax, a virtual medical assistant that detects urgent skin conditions and provides treatment plans, built to improve access to basic healthcare.",
+    imageUrl: "/amanda.jpg",
+    projectUrl: "https://devpost.com/software/amanda-o1eg2a"
+  },
 ];
 
 export default function ProjectCarousel() {
