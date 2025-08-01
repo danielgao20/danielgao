@@ -19,9 +19,9 @@ export default function Home() {
 
       <h1 className="text-3xl font-medium mt-8">Hey, what's up!</h1>
       <p className="mt-5 text-base font-normal text-center max-w-xl">
-        My name is Daniel Gao, I'm a junior at <b className="bold-emphasized">USC</b> studying 
-        computer science and business, currently exploring software engineering and
-        entrepreneurial projects. I've previously worked on full-stack projects
+        My name is Daniel Gao, I'm a senior at <b className="bold-emphasized">USC</b> studying 
+        computer science and business, with a focus on software engineering and
+        building high-impact solutions. I've previously worked on full-stack projects
         at <b className="bold-emphasized">Amazon</b> and <b className="bold-emphasized">IBM</b>.
       </p>
 
